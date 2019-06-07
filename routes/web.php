@@ -11,7 +11,7 @@
 |
 */
 
-Route::view('/','view');
+Route::view('/','welcome');
 Route::view('view','view');
 Route::get('view','readController@index');
 Route::view('create','create');
