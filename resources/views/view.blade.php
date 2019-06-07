@@ -41,7 +41,7 @@
 
 
 <table class="table table-bordered mt-5" style="text-align:center">
-<thead> 
+<thead class="thead-light"> 
   <tr>
     <th scope="col">Title</th>
     <th scope="col">Content</th>
