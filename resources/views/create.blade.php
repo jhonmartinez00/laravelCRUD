@@ -8,10 +8,11 @@
     <body>
         <div class="container">
             <form action="create" method="POST">
-        <h2 class="pt-5">Create Announcements</h2>
+        <h2 class="pt-5">New Announcement</h2>
+        <hr>
         <a href="/view">View announcements</a>
                 <div class="form-group mt-5">
-                    <input type="text" class="form-control" name="title" placeholder="Announcement Title" value="">
+                    <input type="text" class="form-control" name="title" placeholder="Title" value="">
                     <div>{{ $errors->first('title') }}</div>
                 </div>
                 <div class="form-group">

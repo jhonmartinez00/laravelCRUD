@@ -9,6 +9,7 @@
     <body>
         <div class="container">
         <h2 class="pt-5">Announcements</h2>
+        <hr>
         <a href="/create">Create new announcement</a>
 
         @if(session()->has('message'))
