@@ -10,7 +10,7 @@
         <div class="container">
         <h2 class="pt-5">Announcements</h2>
         <hr>
-        <a href="/create">Create new announcement</a>
+        <a href="/create" class="btn btn-secondary">Create New</a>
 
         @if(session()->has('message'))
         <div class="alert alert-success alert-dismissible fade show col-lg-4" style="float:right" role="alert">
