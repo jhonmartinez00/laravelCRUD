@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <head>
         <title>Edit</title>
     </head>
@@ -8,8 +8,9 @@
         <div class="container">
             <form action="/update/{{ $announcement-> id}}" method="POST">
             @method('PATCH')
-            <h2 class="py-5">Edit Details </h2>
-                <div class="form-group">
+        <h2 class="pt-5">Edit Details</h2>
+        <a href="/read">Back</a>
+                <div class="form-group mt-5">
                     <input type="text" class="form-control" name="title" value="{{ $announcement-> title}}">
                     <div>{{ $errors->first('title') }}</div>
                 </div>

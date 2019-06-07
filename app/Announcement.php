@@ -8,4 +8,5 @@ class Announcement extends Model
 {
     //
     protected $guarded = [];
+
 }
