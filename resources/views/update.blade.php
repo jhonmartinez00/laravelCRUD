@@ -9,7 +9,7 @@
             <form action="/update/{{ $announcement-> id}}" method="POST">
             @method('PATCH')
         <h2 class="pt-5">Edit Details</h2>
-        <a href="/read">Back</a>
+        <a href="/view">Back</a>
                 <div class="form-group mt-5">
                     <input type="text" class="form-control" name="title" value="{{ $announcement-> title}}">
                     <div>{{ $errors->first('title') }}</div>

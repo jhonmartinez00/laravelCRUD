@@ -22,6 +22,6 @@ class updateController extends Controller
             'date' => 'required',
         ]);
         $announcement->update($data);
-        return redirect('/read');
+        return redirect('/view')->with('updateMessage','An announcement has been updated');
     }
 }

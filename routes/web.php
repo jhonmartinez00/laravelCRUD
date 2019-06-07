@@ -12,14 +12,14 @@
 */
 
 Route::view('/','welcome');
-Route::view('read','read');
-Route::get('read','readController@index');
+Route::view('view','view');
+Route::get('view','readController@index');
 Route::view('create','create');
 Route::post('create','createController@index');
 Route::view('update','update');
 Route::get('update/{announcement}','updateController@show');
 Route::patch('update/{announcement}','updateController@update');
 Route::view('delete/{announcement}','index');
-Route::delete('read/{announcement}','readController@destroy');
+Route::delete('view/{announcement}','readController@destroy');
 
 

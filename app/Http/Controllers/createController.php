@@ -13,6 +13,6 @@ class createController extends Controller
             'date' => 'required',
         ]);
         Announcement::create($data);
-        return redirect('/read');
+        return redirect('/view')->with('message','An announcement has been added');
     }
 }

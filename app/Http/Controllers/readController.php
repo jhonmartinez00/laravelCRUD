@@ -9,15 +9,15 @@ class readController extends Controller
 {
     public function index(){
 
-        $announcements = Announcement::all();
-
-        return view('read', compact('announcements'));
+        $announcements = Announcement::sort()->paginate(5);
+        
+        return view('view', compact('announcements'));
 
     }
     
     public function destroy(Announcement $announcement){
         $announcement->delete();
 
-        return redirect('/read');
+        return redirect('/view')->with('deleteMessage','An announcement has been deleted');
     }
 }

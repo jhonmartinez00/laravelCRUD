@@ -9,7 +9,7 @@
         <div class="container">
             <form action="create" method="POST">
         <h2 class="pt-5">Create Announcements</h2>
-        <a href="/read">View announcements</a>
+        <a href="/view">View announcements</a>
                 <div class="form-group mt-5">
                     <input type="text" class="form-control" name="title" placeholder="Announcement Title" value="">
                     <div>{{ $errors->first('title') }}</div>
