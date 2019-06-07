@@ -45,7 +45,7 @@
     <th scope="col">Title</th>
     <th scope="col">Content</th>
     <th scope="col">Date</th>
-    <th colspan="2">Action</th>
+    <th colspan="2">Actions</th>
   </tr>
 </thead>
 <tbody>
