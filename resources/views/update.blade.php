@@ -4,9 +4,10 @@
         <div class="container">
             <form action="/update/{{ $announcement-> id}}" method="POST">
             @method('PATCH')
-        <h2 class="pt-5">Edit Details</h2>
+        <h2 class="pt-5">Edit Details
+        <a href="/view" class="btn btn-secondary float-right">Back</a>
+        </h2>
         <hr>
-        <a href="/view">Back</a>
                 <div class="form-group mt-5">
                     <input type="text" class="form-control" name="title" value="{{ $announcement-> title}}">
                     <div>{{ $errors->first('title') }}</div>

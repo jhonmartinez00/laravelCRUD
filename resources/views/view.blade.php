@@ -4,9 +4,10 @@
 <body>
         <div class="container">
         <div>
-        <h2 class="pt-5">Announcements</h2>
-        <hr>
+        <h2 class="pt-5">Announcements
         <a href="/create" class="btn btn-secondary float-right">Create New</a>
+        <hr>
+        </h2>
         </div>
         
 

@@ -7,9 +7,9 @@
         ?>
         <div class="container">
             <form action="create" method="POST">
-        <h2 class="pt-5">New Announcement</h2>
+        <h2 class="pt-5">New Announcement
+        <a href="/view" class="btn btn-success float-right">View announcements</a></h2>
         <hr>
-        <a href="/view">View announcements</a>
 
             <div class="row mt-5">
             <div class="col col-lg-8">
