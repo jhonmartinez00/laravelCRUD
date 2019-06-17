@@ -23,3 +23,7 @@ Route::view('delete/{announcement}','index');
 Route::delete('view/{announcement}','readController@destroy');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
