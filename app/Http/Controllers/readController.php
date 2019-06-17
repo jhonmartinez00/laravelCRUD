@@ -8,9 +8,10 @@ use App\Announcement;
 class readController extends Controller
 {
     public function index(){
-
         $announcements = Announcement::sort()->paginate(5);
-        
+        if(\Request::ajax()){
+            return Announcement::get();
+        }
         return view('view', compact('announcements'));
 
     }

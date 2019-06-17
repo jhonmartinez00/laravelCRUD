@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="css/app.css">  
-<script src="{{ asset('js/app.js') }}"></script>
-    <head>
-        <title>View</title>
-    </head>
-    <body>
+@extends('nav')
+@section('content')
+  
+<body>
         <div class="container">
+        <div>
         <h2 class="pt-5">Announcements</h2>
         <hr>
-        <a href="/create" class="btn btn-secondary">Create New</a>
+        <a href="/create" class="btn btn-secondary float-right">Create New</a>
+        </div>
+        
+
 
         @if(session()->has('message'))
         <div class="alert alert-success alert-dismissible fade show col-lg-4" style="float:right" role="alert">
@@ -38,7 +37,6 @@
         </button>
         </div>
         @endif
-
 
 <table class="table table-bordered mt-5" style="text-align:center">
 <thead class="thead-light"> 
@@ -72,3 +70,4 @@
         </div>
     </body>
 </html> 
+@endsection

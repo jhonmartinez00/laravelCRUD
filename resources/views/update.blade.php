@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="{{ asset('css/app.css')}}">
-    <head>
-        <title>Edit</title>
-    </head>
+@extends('nav')
+@section('content')
     <body>
         <div class="container">
             <form action="/update/{{ $announcement-> id}}" method="POST">
@@ -29,3 +25,4 @@
         </div>
     </body>
 </html> 
+@endsection
