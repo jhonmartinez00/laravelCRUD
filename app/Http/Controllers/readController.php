@@ -21,4 +21,5 @@ class readController extends Controller
 
         return redirect('/view')->with('deleteMessage','An announcement has been deleted');
     }
+
 }
