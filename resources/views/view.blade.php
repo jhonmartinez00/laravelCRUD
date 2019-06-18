@@ -1,4 +1,4 @@
-@extends('nav')
+@extends('layouts.app')
 @section('content')
   
 <body>

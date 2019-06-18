@@ -11,7 +11,6 @@
 |
 */
 
-Route::view('/','welcome');
 Route::view('view','view');
 Route::get('view','readController@index');
 Route::view('create','create');
@@ -27,3 +26,4 @@ Route::delete('view/{announcement}','readController@destroy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
