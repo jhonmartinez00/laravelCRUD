@@ -10,8 +10,6 @@
         </h2>
         </div>
         
-
-
         @if(session()->has('message'))
         <div class="alert alert-success alert-dismissible fade show col-lg-4" style="float:right" role="alert">
         {{ session()->get('message') }}
@@ -29,7 +27,7 @@
         </button>
         </div>
         @endif
-
+        
         @if(session()->has('updateMessage'))
         <div class="alert alert-primary alert-dismissible fade show col-lg-4" style="float:right" role="alert">
         {{ session()->get('updateMessage') }}
